@@ -350,9 +350,9 @@
 @media (max-width: 420px) {
   .header-block__title {
     font-size: 21px;
-    margin-top: 32%;
+    margin-top: 28%;
     max-width: 235px;
-    margin-right: 22%;
+    margin-right: 19%;
   }
   .header-block__img {
     height: 63%;
@@ -972,7 +972,7 @@
   }
   .company-block__text {
     margin: 20px 13px 0 13px;
-    text-align: justify;
+    text-align: start;
     font-size: 14px;
   }
 }
@@ -1104,6 +1104,9 @@
   }
   .rev-block__img {
     width: 60% !important;
+  }
+  #rev-6-block-text {
+    width: 72%;
   }
 }
 
@@ -1548,6 +1551,15 @@
 @media (max-width: 420px) {
   .block-text__title {
     padding-top: 0;
+  }
+  .filter-block {
+    padding-bottom: 0;
+  }
+  .filter-button {
+    margin-bottom: 5%;
+  }
+  .filter-box {
+    margin-bottom: 3%;
   }
 }
 
