@@ -1,0 +1,52 @@
+.jugmodal
+   display: none
+   &_active
+      display: flex
+      background-color: rgba(0, 0, 0, 0.5)
+.jugfiltermodal
+   display: none
+   &_active
+      overflow: auto
+      display: flex
+      background-image: url(../img/shower/abc.jpg), url(../img/shower/back.png)
+      background-position: left center, center right
+      background-size: 41%, cover
+      background-repeat: repeat-y, no-repeat
+.jugmodal
+   &__img
+      height: 50%
+      margin: auto
+   &__button
+      outline: none !important
+      font-weight: 500
+      font-size: 18px
+      padding: 9px 56px !important
+      margin-top: 3%
+   &-block
+      text-align: center
+.jug-block
+   &__text
+      text-align: left
+      margin-left: 17%
+      margin-top: 2%
+      margin-bottom: 5%
+      margin-right: 5%
+@media (max-width: 767.98px)
+   .jugmodal__img
+      height: 40%
+   .jugfiltermodal_active
+      background-size: 47%, cover
+   .jug-block__text
+      margin-left: 7%
+      margin-top: 0%
+   .owljug
+      width: 53%
+@media (max-width: 575.98px)
+   .jugfiltermodal_active
+      flex-direction: column
+      background-size: 100%, cover
+   .owljug
+      background: #EEFAFF
+      width: 100%
+   .jugmodal__img
+      margin-top: 10%

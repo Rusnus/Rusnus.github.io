@@ -1,0 +1,191 @@
+.modal
+   display: none
+   overflow: auto
+.modal_active
+   display: flex
+   justify-content: center
+   align-items: center
+   background-color: rgba(0, 0, 0, 0.5)
+.form
+   &-box
+      &__img
+         position: absolute
+         top: 10px
+         right: 10px
+         height: 30px
+         cursor: pointer
+   &__title
+      margin-bottom: 40px
+.box
+   position: relative
+   padding: 80px 80px
+   background: white
+   border: 3px solid #1493E6
+
+.modalshower
+   display: none
+   &_active
+      display: flex
+      background-color: rgba(0, 0, 0, 0.5)
+.box-shower
+   position: relative
+   padding: 80px 80px
+   background: white
+   border: 3px solid #1493E6
+   border-radius: 15px
+   width: 60%
+   margin: auto
+   padding: 50px
+   &_active
+      display: block
+   &__img
+      position: absolute
+      top: 20px
+      right: 20px
+      height: 30px
+      cursor: pointer
+   &__button
+      text-align: center
+      margin-top: 30px
+.modalshowerwork
+   display: none
+   &_active
+      background-color: rgba(0, 0, 0, 0.5)
+      display: flex
+
+.button_word
+   background: none
+   color: #00B2FA
+   border: none
+   outline: none !important
+   padding: 0
+.lenardmodal
+   display: none
+   &_active
+      display: flex
+      background-color: rgba(0, 0, 0, 0.5)
+
+.lenard-block
+   position: relative
+   width: 70%
+   margin: auto
+   background: white
+   padding: 50px
+   border: 3px solid #1493E6
+   border-radius: 15px
+   &__title
+      text-align: center
+      margin-bottom: 30px
+      font-size: 19px
+   &-box
+      display: flex
+      justify-content: space-around
+      align-items: end
+      &__img
+         width: 250px
+         border-radius: 20px
+      &__text
+         width: 70%
+.stonemodal
+   display: none
+   &_active
+      display: flex
+      background-color: rgba(0, 0, 0, 0.5)
+
+.stone-block
+   position: relative
+   width: 70%
+   margin: auto
+   background: white
+   padding: 50px
+   border: 3px solid #1493E6
+   border-radius: 15px
+   &__title
+      text-align: center
+      margin-bottom: 30px
+      font-size: 19px
+   &-box
+      display: flex
+      justify-content: space-around
+      align-items: end
+      &__img
+         width: 250px
+         border-radius: 20px
+      &__text
+         width: 70%
+@media (max-width: 991.98px)
+   .box-shower
+      width: 90%
+      padding: 50px 30px
+   .stone-block
+      padding: 30px
+      width: 90%
+   .stone-block-box
+      display: block
+      text-align: center
+      &__text
+         text-align: start
+         width: 100%
+         margin-bottom: 15px
+   .stone-block__title
+      margin-bottom: 10px
+   .lenard-block
+      padding: 30px
+      width: 90%
+      &-box
+         align-items: center
+         margin-bottom: 15px
+@media (max-width: 575.98px)
+   .stone-block-box__text
+      font-size: 14px
+   .lenard-block-box__text
+      font-size: 14px
+   .box-shower
+      font-size: 14px
+   .lenard-block-box
+      display: block
+      text-align: center
+      &__text
+         text-align: start
+         width: 100%
+         margin-bottom: 15px
+@media (max-width: 540px)
+   .box-shower
+      width: 97%
+      padding: 50px 10px 10px 10px
+   .stone-block
+      width: 97%
+      padding: 10px
+      &__title
+         font-size: 16px
+   .lenard-block
+      width: 97%
+      padding: 10px
+      &__title
+         font-size: 16px
+@media (max-width: 420px)
+   .lenard-block-box__img
+      width: 200px
+   .lenard-block__title
+      margin-bottom: 15px
+      margin-top: 20px
+   .lenard-block-box
+      margin-bottom: 0
+   .stone-block__title
+      margin-top: 20px
+   .lenard-block-box__img
+      width: 150px
+   .stone-block-box__img
+      width: 150px
+   .box-shower
+      padding: 50px 10px 10px 10px
+      &__button
+         margin-top: 15px
+   .box
+      padding: 45px 60px
+      width: 95%
+   .form__title
+      text-align: center
+   input
+      font-size: 14px
+      padding: 8px 15px

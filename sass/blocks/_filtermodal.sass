@@ -1,0 +1,71 @@
+.filtermodal
+   display: none
+   height: 100vh
+   &_active
+      background-image: url(../img/shower/abc.jpg), url(../img/shower/back.png)
+      background-position: left center, center right
+      background-size: 38%, cover
+      background-repeat: repeat-y, no-repeat
+      z-index: 5
+      display: flex
+      z-index: 3
+.filter-block
+   display: flex
+   flex-direction: column
+   text-align: center
+   width: 39%
+   margin: 0 auto
+.filter-box
+   margin: 0 auto
+.filter
+   &__img
+      margin-left: 3%
+   &-block
+      margin-top: 5%
+      &__text
+         margin: 25px auto 0 auto
+         text-align: start
+         line-height: 1.7
+   &-box
+      margin-top: 5%
+.filter-button
+   width: min-content
+   margin: 0 auto
+   margin-top: 4%
+   outline: none !important
+   padding: 9px 54px !important
+
+@media (max-width: 991.98px)
+   .filter
+      &-block
+         width: 44%
+      &__img
+         height: 84%
+         margin: auto
+   .filtermodal_active
+      background-size: 45%, cover
+@media (max-width: 767.98px)
+   .filter
+      &-block
+         width: 49%
+      &__img
+         height: 60%
+   .filtermodal_active
+      background-size: 39%, cover
+@media (max-width: 575.98px)
+   .filter-block__text
+      margin: 0 auto
+@media (max-width: 540px)
+   .filtermodal_active
+      background-size: 100%, cover
+      flex-direction: column
+   .filter
+      &-block
+         background: #EEFAFF
+         width: 100%
+         padding-bottom: 7%
+         &__text
+            padding: 0 3%
+@media (max-width: 420px)
+   .block-text__title
+      padding-top: 0

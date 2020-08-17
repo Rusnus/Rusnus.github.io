@@ -1,0 +1,90 @@
+.contacts
+   width: 100%
+   height: 100%
+   background: linear-gradient(to right, #FFFFFF 50%, #EEFAFF 50%)
+   padding: 110px 0
+   &-block
+      display: flex
+      justify-content: space-around
+   &__phone
+      &:hover
+         color: black
+         text-decoration: none
+.block-form
+   display: block
+   flex-basis: 30%
+   margin-left: 35%
+   &__title
+      text-align: center
+      margin-bottom: 40px
+      font-size: 18px
+.block-contacts
+   &__title
+      color: black
+      text-align: start
+      padding: 0
+   &__name
+      margin-top: 43px
+   &__text
+      margin-top: 10px
+.input
+   display: block
+   width: 100%
+   border: 1px solid #00B5FF
+   border-radius: 13px
+   padding: 16px 15px
+   margin-bottom: 30px
+   outline: none
+.modal-dialog__button
+   width: 100%
+   color: white
+   background: #00ABF1 !important
+   border: 1px solid #00ABF1 !important
+   border-radius: 13px !important
+   padding: 19px 15px !important
+   
+.video
+   width: 100%
+   autoplay: 
+@media (max-width: 1199.98px)
+   .block-form
+      &__title
+         font-size: 16px
+@media (max-width: 991.98px)
+   .block-form
+      margin-left: 20%
+      flex-basis: 40%
+@media (max-width: 767.98px)
+   .block-form
+      &__title
+         margin-bottom: 25px
+   .input
+      padding: 12px 15px
+   .modal-dialog__button
+      padding: 14px 15px !important
+@media (max-width: 575.98px)
+   .contacts
+      padding: 50px 0
+      background: white
+   .block-form
+      display: none
+   .block-contacts
+      &__title
+         text-align: center
+         padding: 20px 0
+      &__name
+         margin-top: 17px
+      &__text
+         margin-top: 15px
+         font-size: 14px
+   .cont-block
+      display: flex
+      &-box2
+         margin-left: 40px
+@media (max-width: 540px)
+   .cont-block
+      display: block
+      &-box2
+         margin-left: 0
+   .block-contacts
+      text-align: center

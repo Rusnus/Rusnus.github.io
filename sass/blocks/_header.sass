@@ -1,0 +1,259 @@
+.header
+   height: 100vh
+   padding: 1px
+   &-block
+      display: flex
+      justify-content: flex-end
+      &__title
+         margin-top: 5%
+         margin-right: 38%
+         max-width: 550px
+         font-size: 50px
+      &__img
+         position: absolute
+         height: 95%
+         z-index: -4
+.nav
+   margin: auto
+   margin-top: 10px
+   &-menu
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: auto
+      
+      padding: 0
+      &__title
+         margin-left: 20px
+         display: inline
+         font-size: 18px
+         list-style-type: none
+         a:hover
+            border-bottom: 1.2px solid #1261AC
+            text-decoration: none  
+   &__button
+      max-height: 50px
+      margin: auto
+      margin-right: 0
+      background: #D2F2FF
+      font-size: 22px
+      font-weight: 700
+      padding: 7px 43px
+      border: 1px solid #D2F2FF
+      border-radius: 30px
+      cursor: pointer
+      outline: none !important
+      &:hover
+         background: #DBF5FF
+         border: 1px solid #DBF5FF
+   &__logo
+      height: 70px
+   &__icon
+      display: none
+      height: 40px
+.title-effect
+   max-width: fit-content
+   margin: 5px 0
+   padding: 0 5px 5px 5px
+   background: #D2F2FF
+   border-radius: 10px
+
+.discount
+   position: absolute
+   bottom: 0px
+   display: flex
+   justify-content: space-between
+   align-items: center
+   &__25
+      background: #0800FF
+      padding: 22px 45px
+      color: white
+      font-size: 50px
+      font-weight: 700
+   &-time
+      display: flex
+      padding: 10px 28px
+      text-align: center
+      align-items: center
+      background: linear-gradient(91deg, rgba(214,242,253,1) 0%, rgba(2,172,241,1) 100%)
+      &__button
+         color: white
+         background: #0800FF
+         border: 1px solid #0800FF
+         border-radius: 14px
+         padding: 5px 50px
+         font-size: 35px
+         font-weight: 700
+         outline: none
+         cursor: pointer
+         margin: auto
+         &:hover
+            background: #3944FE
+            border: 1px solid #3944FE
+.countdown
+   list-style: none
+   margin: auto
+   padding: 0
+   display: block
+   padding-right: 20px
+   &__text
+      font-size: 17px
+      font-weight: 700
+	
+.countdown li 
+   display: inline-block
+
+/* здесь дни, часы, минуты, секунды */
+.countdown li span
+   width: auto
+   color: #000
+   font: 40px Verdana
+   display: inline-block
+
+.countdown li.seperator 
+   color: #000
+   font: 40px Verdana
+   vertical-align: top
+
+.countdown li div
+   margin: 0
+   color: #000
+   font: 20px Verdana
+
+@media (max-width: 1199.98px)
+   .discount
+      &__25
+         font-size: 40px
+         padding: 24px 28px
+      &-time
+         padding: 5px 28px
+         &__button
+            font-size: 30px
+            padding: 5px 30px
+   .countdown 
+      padding-right: 17px
+
+@media (max-width: 991.98px)
+   .nav
+      &-menu
+         &__title
+            font-size: 15px
+      &__button
+         font-size: 17px
+      &__logo
+         height: 50px
+   .header
+      &-block
+         &__title
+            font-size: 43px
+            margin-right: 33%
+            margin-top: 17%
+         &__img
+            height: 91%
+            right: 0
+   .discount
+      &__25
+         font-size: 30px
+         padding: 23px 5px
+      &-time
+         padding: 0px 11px
+         &__button
+            font-size: 24px
+            padding: 5px 18px
+   .countdown 
+      padding-right: 12px
+   .countdown li div
+      font-size: 17px
+   .countdown li span
+      font-size: 36px
+
+@media (max-width: 767.98px)
+   .nav
+      &__logo
+         height: 45px
+      &__button
+         padding: 7px 34px
+      &-menu
+         display: none
+      &__icon
+         display: block
+   .icon
+      margin: auto
+      margin-left: 45%
+   .header
+      &-block
+         &__title
+            font-size: 32px
+            margin-top: 24%
+         &__img
+            height: 84%
+   .discount
+      display: block
+      &__25
+         text-align: center
+         padding: 17px 5px
+      &-time
+         padding: 5px 28px
+@media (max-width: 575.98px)
+   .nav
+      width: 90%
+      &__button
+         padding: 7px 30px
+         font-size: 16px
+         margin: 0
+      &__logo
+         height: 40px
+   .icon
+      margin-left: auto
+      margin-right: 20px
+   .header
+      &-block
+         width: 90%
+         margin: auto
+         &__title
+            max-width: 270px
+            font-size: 25px
+            margin-right: 36%
+            margin-top: 19%
+         &__img
+            height: 75%
+   .discount
+      display: block
+      left: 0
+      right: 0
+      &-time
+         padding: 0
+         text-align: center
+   .countdown
+      padding: 5px 22px
+      &__text
+         margin: auto
+   .countdown li span
+      font-size: 30px
+   .countdown li.seperator
+      font: 28px Verdana
+@media (max-width: 540px)
+   .discount
+      &-time
+         display: block
+         &__button
+            margin: 0 0 10px 0
+   .header
+      &-block
+         &__title
+            margin-top: 18%
+            max-width: 279px
+            margin-right: 29%
+         &__img
+            height: 69%
+@media (max-width: 420px)
+   .header
+      &-block
+         &__title
+            font-size: 21px
+            margin-top: 32%
+            max-width: 235px
+            margin-right: 22%
+         &__img
+            height: 63%
+            margin-right: 0

@@ -1,0 +1,74 @@
+.jug
+   background-image: url(../img/shower/abc.jpg), url(../img/jug/back.png)
+   background-position: left center, center right
+   background-size: 38%, cover
+   background-repeat: repeat-y, no-repeat
+   position: relative
+   &-block
+      display: flex
+      justify-content: space-between
+      &-img
+         display: grid
+      &__img
+         height: 400px
+         padding-right: 40px
+      &__imgs
+         height: 100px
+@media (max-width: 1199.98px)
+   .jug
+      background-size: 34%, cover
+      &-block
+         &__imgs
+            margin-bottom: 60%
+            height: 80px
+         &__img
+            height: 337px
+            padding-right: 0
+@media (max-width: 991.98px)
+   .jug
+      background-size: 32%, cover
+      &-block
+         &-img
+            height: min-content
+            margin-left: -30px
+            margin-right: 30px
+         &__imgs
+            height: 57px
+         &__img
+            height: 234px
+            padding-right: 0
+   .jug-button
+      margin-left: 23px
+@media (max-width: 767.98px)
+   .jug
+      height: auto
+      background-size: 32%, cover
+      &-block
+         &-img
+            height: min-content
+            margin-left: -67px
+            margin-right: 27px
+         &__imgs
+            height: 48px
+            margin-left: 19px
+         &__img
+            height: 219px
+            padding-right: 0
+   .jug-text
+      max-width: 97%
+@media (max-width: 575.98px)
+   .jug
+      background-image: none
+      &-block
+         display: block
+         &-img
+            width: min-content
+            margin: auto
+         &__imgs
+            margin: auto
+   .block-text
+      background: #D2F2FF
+      &__text
+         max-width: 90%
+   .jug-button
+      margin-top: 15px
