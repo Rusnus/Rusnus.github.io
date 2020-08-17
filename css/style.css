@@ -350,7 +350,6 @@
 @media (max-width: 420px) {
   .header-block__title {
     font-size: 21px;
-    margin-top: 28%;
     max-width: 240px;
     margin-right: 18%;
   }
