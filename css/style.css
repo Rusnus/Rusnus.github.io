@@ -359,6 +359,20 @@
   }
 }
 
+@media (max-height: 670px) and (max-width: 420px) {
+  .header-block__title {
+    margin-right: 22%;
+    margin-top: 37%;
+  }
+}
+
+@media (max-height: 550px) and (max-width: 420px) {
+  .header-block__title {
+    margin-right: 18%;
+    margin-top: 18%;
+  }
+}
+
 .shower {
   position: relative;
   background-image: url(../img/shower/abc.jpg), url(../img/shower/back.png);
