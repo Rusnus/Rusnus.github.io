@@ -28,11 +28,11 @@
             <button col-1 id="button" class=" nav__button">Заказать</button>
          </div>
          <div class="header-block">
-            <div class="header-block__title">
+            <div class="animate__animated animate__fadeIn header-block__title">
                <p>Очищающий воду фильтр для душа c</p>
                <p class="title-effect">массажным эффектом</p>
             </div>
-            <img src="./img/header/photo.jpg" alt="" class="animate__animated animate__fadeInRight animate__slow	1s header-block__img">
+            <img src="./img/header/photo.jpg" alt="" class="animate__animated animate__fadeInLeft animate__slow 1.5s header-block__img">
          </div>
          <div class="discount">
             <div class="discount__25">СКИДКА -25%</div>
@@ -217,7 +217,7 @@
          </div>
          <h5>Душевая лейка «Водолей»</h5>
          <div class="shower-block">
-            <img class="shower-block__img" src="./img/shower/photo1.jpg" alt="#">
+            <img class="wow slideInLeft animate__animated animate__fadeInLeft shower-block__img" src="./img/shower/photo1.jpg" alt="#">
             <div class="shower-block-text">
                <div class="block-text">
                   <p class="block-text__title">Характеристики</p>
@@ -607,6 +607,7 @@
          </div>
       </div>
    </div>
+   <script src="./js/wow.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
@@ -616,20 +617,6 @@
    <script src="./js/bootstrap.js"></script>
    <script src="./js/owl.carousel.min.js"></script>
    <script src="./js/main.js"></script>
-   <script type="text/javascript">
-      // здесь нужная дата в формате гггг-мм-дд чч:мм:сс
-      var deadline = '2020-08-30 22:06:05';
-   </script>
-   <script type="text/javascript">
-      $('.countdown').downCount({
-         date: deadline,
-      },
-         function () {
-            /* действие после завершения таймера */
-            alert("Время истекло!");
-         });
-   </script>
-
 </body>
 
 </html>

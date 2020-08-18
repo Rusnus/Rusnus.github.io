@@ -99,7 +99,18 @@
 })(jQuery);
 
 $(document).ready(function () {
+   new WOW().init();
 
+   // здесь нужная дата в формате гггг-мм-дд чч:мм:сс
+   var deadline = '2020-08-30 22:06:05';
+   date: deadline,
+      $('.countdown').downCount({
+            date: deadline,
+         },
+         function () {
+            /* действие после завершения таймера */
+            alert("Время истекло!");
+         });
    var carousel = $(this);
    $(".owl-license").owlCarousel({
       loop: true,
