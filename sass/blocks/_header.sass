@@ -241,6 +241,7 @@
    .header
       &-block
          &__title
+            animation-delay: 1s !important
             margin-top: 18%
             max-width: 279px
             margin-right: 29%
@@ -251,12 +252,12 @@
       &-block
          &__title
             font-size: 21px
-            max-width: 240px
+            max-width: 247px
             margin-right: 18%
          &__img
             height: 63%
             margin-right: 0
-@media (max-height: 670px) and (max-width: 420px)
+@media (min-height: 551px) and (max-width: 420px)
    .header-block__title
       margin-right: 22%
       margin-top: 37%
@@ -264,3 +265,10 @@
    .header-block__title
       margin-right: 18%
       margin-top: 18%
+@media (min-height: 671px) and (max-width: 420px)
+   .header-block__title
+      margin-right: 27%
+      margin-top: 37%
+@media (max-height: 670px) and (min-width: 320px)
+   .header-block__title
+      margin-right: 19%
