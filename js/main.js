@@ -326,4 +326,8 @@ $(document).ready(function () {
       document.querySelector('body').style.overflow = 'hidden';
    });
 
+   $("#modal-form").on("submit" , function name(event) {
+      event.preventDefault();
+   })
+
 });
